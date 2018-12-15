@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div className="App">
         {list.map(item => (
-          <div>
+          <div key={item.objectID}>
             <span>
               <a href={item.url}>{item.title}</a>
             </span>
